@@ -63,25 +63,39 @@
         <h1 class="hero-name">
             <span class="hn-part">Vuong</span>
 
-            <!-- Circular ornament (Figma: Repeat group "n" in gold) -->
+            <!-- Circular ornament -->
             <span class="hn-ornament" aria-hidden="true">
-                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
                             <stop offset="0%"   stop-color="#fcb635"/>
-                            <stop offset="51%"  stop-color="#ffffff"/>
-                            <stop offset="100%" stop-color="rgba(252,136,53,0.6)"/>
+                            <stop offset="50%"  stop-color="#fff6d0"/>
+                            <stop offset="100%" stop-color="#fc8835"/>
                         </linearGradient>
+                        <filter id="goldGlow" x="-30%" y="-30%" width="160%" height="160%">
+                            <feGaussianBlur stdDeviation="4" result="blur"/>
+                            <feMerge>
+                                <feMergeNode in="blur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
                         <path id="circlePath"
-                              d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/>
+                              d="M90,90 m-65,0 a65,65 0 1,1 130,0 a65,65 0 1,1 -130,0"/>
                     </defs>
-                    <text fill="url(#goldGrad)" font-size="10.5"
-                          font-family="Cormorant Garamond, serif" letter-spacing="3.2">
-                        <textPath href="#circlePath">
-                            n · n · n · n · n · n · n · n · n ·
+                    <!-- Glow ring -->
+                    <circle cx="90" cy="90" r="65"
+                            fill="none" stroke="rgba(252,182,53,0.15)" stroke-width="1.5"/>
+                    <!-- Circular text -->
+                    <text fill="url(#goldGrad)" font-size="20"
+                          font-family="Hatolie, serif"
+                          filter="url(#goldGlow)">
+                        <textPath href="#circlePath" startOffset="0%">
+                            n · n · n · n · n · n · n · n ·
                         </textPath>
                     </text>
-                    <circle cx="60" cy="60" r="3.5" fill="url(#goldGrad)"/>
+                    <!-- Center dot -->
+                    <circle cx="90" cy="90" r="5"
+                            fill="url(#goldGrad)" filter="url(#goldGlow)"/>
                 </svg>
             </span>
 

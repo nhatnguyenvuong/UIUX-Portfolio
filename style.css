@@ -77,7 +77,7 @@ body {
     font-family: var(--font-sans);
     font-weight: 300;
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: clip; /* clip không tạo scroll context, cho phép swash font hiển thị */
     cursor: none;
 }
 
@@ -384,8 +384,8 @@ ul { list-style: none; }
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    width: clamp(70px, 9vw, 120px);
-    height: clamp(70px, 9vw, 120px);
+    width: clamp(120px, 13vw, 190px);
+    height: clamp(120px, 13vw, 190px);
     opacity: 0;
     transform: scale(0.6) rotate(-30deg);
 }
