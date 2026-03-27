@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Vuong — UI/UX Designer</title>
+    <meta name="description" content="Nguyen Vuong is a UI/UX designer exploring the intersection of human behavior, technology, and emotion.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader" class="loader">
+    <div class="loader-inner">
+        <span class="loader-mark">NV</span>
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+</div>
+
+<!-- Custom Cursor -->
+<div id="cursor" class="cursor"></div>
+<div id="cursor-dot" class="cursor-dot"></div>
+
+<!-- Navigation -->
+<nav id="nav" class="nav">
+    <a href="#home" class="nav-logo">NV</a>
+    <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#works" class="nav-link">Works</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="mailto:hello@nguyenvuong.design" class="nav-cta">
+        Get in Touch <span class="cta-arrow">↗</span>
+    </a>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section id="home" class="hero">
+    <div class="hero-top">
+        <span class="hero-badge">UI/UX Designer · Based in Vietnam</span>
+    </div>
+
+    <div class="hero-center">
+        <h1 class="hero-title">
+            <span class="title-line"><span class="title-inner">Nguyen</span></span>
+            <span class="title-line title-outlined"><span class="title-inner">Vuong</span></span>
+        </h1>
+        <p class="hero-sub">Thoughtful digital experiences at the intersection of<br>human behavior, technology & emotion.</p>
+    </div>
+
+    <div class="hero-bottom">
+        <div class="hero-social">
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="social-sep">·</span>
+            <a href="https://behance.net" target="_blank" rel="noopener">Behance</a>
+            <span class="social-sep">·</span>
+            <a href="https://nguyenvuong.framer.ai" target="_blank" rel="noopener">Framer</a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span class="scroll-label">Scroll</span>
+            <div class="scroll-line-wrap"><div class="scroll-line"></div></div>
+        </div>
+    </div>
+
+    <!-- Decorative number -->
+    <span class="hero-deco-num" aria-hidden="true">2025</span>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+════════════════════════════════════════ -->
+<section id="about" class="about section-spacing">
+    <div class="container">
+        <div class="section-label reveal">
+            <span class="label-num">01</span>
+            <div class="label-line"></div>
+            <span class="label-text">About</span>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-left">
+                <p class="about-bio reveal">
+                    I'm a UI/UX designer exploring the intersection of human behavior, technology, and emotion. I design thoughtful digital experiences that are simple, clear, and impactful.
+                </p>
+                <blockquote class="about-quote reveal">
+                    <span>"Simplicity is the ultimate sophistication."</span>
+                    <cite>— Leonardo da Vinci</cite>
+                </blockquote>
+                <div class="about-philosophy reveal">
+                    <p>My design philosophy centers on <em>structure over surface</em> and <em>consistency over trends</em> — creating work that resonates not just visually, but meaningfully.</p>
+                </div>
+            </div>
+
+            <div class="about-right reveal">
+                <div class="skill-col">
+                    <h4 class="skill-heading">Expertise</h4>
+                    <ul class="skill-list">
+                        <li>User Research</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Interaction Design</li>
+                        <li>Design Systems</li>
+                        <li>Visual Design</li>
+                        <li>UX Writing</li>
+                    </ul>
+                </div>
+                <div class="skill-col">
+                    <h4 class="skill-heading">Tools</h4>
+                    <ul class="skill-list">
+                        <li>Figma</li>
+                        <li>Framer</li>
+                        <li>Adobe Creative Suite</li>
+                        <li>Notion</li>
+                        <li>Maze / UserTesting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-stats reveal">
+            <div class="stat-item">
+                <span class="stat-num" data-target="7">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Projects Designed</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num" data-target="2">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num" data-target="3">0</span>
+                <span class="stat-label">Design Disciplines</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num stat-infinity">∞</span>
+                <span class="stat-label">Curiosity</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     MARQUEE
+════════════════════════════════════════ -->
+<div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+        <div class="marquee-content">
+            <span>Structure over surface</span>
+            <span class="m-dot">·</span>
+            <span>Consistency over trends</span>
+            <span class="m-dot">·</span>
+            <span>Empathy by design</span>
+            <span class="m-dot">·</span>
+            <span>Clarity in complexity</span>
+            <span class="m-dot">·</span>
+            <span>Human-centered thinking</span>
+            <span class="m-dot">·</span>
+            <span>Structure over surface</span>
+            <span class="m-dot">·</span>
+            <span>Consistency over trends</span>
+            <span class="m-dot">·</span>
+            <span>Empathy by design</span>
+            <span class="m-dot">·</span>
+            <span>Clarity in complexity</span>
+            <span class="m-dot">·</span>
+            <span>Human-centered thinking</span>
+            <span class="m-dot">·</span>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SELECTED WORKS
+════════════════════════════════════════ -->
+<section id="works" class="works section-spacing">
+    <div class="container">
+        <div class="section-label reveal">
+            <span class="label-num">02</span>
+            <div class="label-line"></div>
+            <span class="label-text">Selected Works</span>
+        </div>
+
+        <!-- Floating preview card -->
+        <div id="workPreview" class="work-preview-card" aria-hidden="true">
+            <div class="wpc-inner"></div>
+            <span class="wpc-label"></span>
+        </div>
+
+        <div class="works-list">
+
+            <a class="work-item reveal-item"
+               href="https://nguyenvuong.framer.ai/works"
+               target="_blank" rel="noopener"
+               data-bg="linear-gradient(135deg, #2D1B69, #0f0720)"
+               data-label="Mobile · Health · 2024">
+                <span class="wi-num">01</span>
+                <div class="wi-body">
+                    <h3 class="wi-name">MEpro</h3>
+                    <p class="wi-desc">Emotion tracking app based on Plutchik's Wheel</p>
+                </div>
+                <div class="wi-tags">
+                    <span>Mobile</span><span>Health</span>
+                </div>
+                <span class="wi-year">2024</span>
+                <span class="wi-arrow">↗</span>
+            </a>
+
+            <a class="work-item reveal-item"
+               href="https://nguyenvuong.framer.ai/works"
+               target="_blank" rel="noopener"
+               data-bg="linear-gradient(135deg, #1a3826, #061510)"
+               data-label="Website · Digital Library · 2024">
+                <span class="wi-num">02</span>
+                <div class="wi-body">
+                    <h3 class="wi-name">Dai Tang Sutra</h3>
+                    <p class="wi-desc">Digital library for Buddhist scriptures & mindful reading</p>
+                </div>
+                <div class="wi-tags">
+                    <span>Website</span><span>Digital Library</span>
+                </div>
+                <span class="wi-year">2024</span>
+                <span class="wi-arrow">↗</span>
+            </a>
+
+            <a class="work-item reveal-item"
+               href="https://nguyenvuong.framer.ai/works"
+               target="_blank" rel="noopener"
+               data-bg="linear-gradient(135deg, #3d0a0a, #190000)"
+               data-label="Website · Sports Platform · 2024">
+                <span class="wi-num">03</span>
+                <div class="wi-body">
+                    <h3 class="wi-name">Dragon Mekong United</h3>
+                    <p class="wi-desc">Football club platform combining sports & modern UX</p>
+                </div>
+                <div class="wi-tags">
+                    <span>Website</span><span>Sports</span>
+                </div>
+                <span class="wi-year">2024</span>
+                <span class="wi-arrow">↗</span>
+            </a>
+
+            <a class="work-item reveal-item"
+               href="https://nguyenvuong.framer.ai/works"
+               target="_blank" rel="noopener"
+               data-bg="linear-gradient(135deg, #3a1f08, #160b00)"
+               data-label="App · Lifestyle Guide · 2025">
+                <span class="wi-num">04</span>
+                <div class="wi-body">
+                    <h3 class="wi-name">Vietnam Timeout</h3>
+                    <p class="wi-desc">Lifestyle guide for restaurants, movies & travel</p>
+                </div>
+                <div class="wi-tags">
+                    <span>App</span><span>Lifestyle</span>
+                </div>
+                <span class="wi-year">2025</span>
+                <span class="wi-arrow">↗</span>
+            </a>
+
+            <a class="work-item reveal-item"
+               href="https://nguyenvuong.framer.ai/works"
+               target="_blank" rel="noopener"
+               data-bg="linear-gradient(135deg, #082a3a, #020f18)"
+               data-label="App · AI Travel · 2025">
+                <span class="wi-num">05</span>
+                <div class="wi-body">
+                    <h3 class="wi-name">Halotravel</h3>
+                    <p class="wi-desc">AI-powered travel assistant with personalized suggestions</p>
+                </div>
+                <div class="wi-tags">
+                    <span>App</span><span>AI</span><span>Travel</span>
+                </div>
+                <span class="wi-year">2025</span>
+                <span class="wi-arrow">↗</span>
+            </a>
+
+            <a class="work-item reveal-item"
+               href="https://nguyenvuong.framer.ai/works"
+               target="_blank" rel="noopener"
+               data-bg="linear-gradient(135deg, #091a3a, #020816)"
+               data-label="SaaS · AI Infrastructure · 2025">
+                <span class="wi-num">06</span>
+                <div class="wi-body">
+                    <h3 class="wi-name">Meganova Cloud</h3>
+                    <p class="wi-desc">Unified AI infrastructure for deploying advanced models</p>
+                </div>
+                <div class="wi-tags">
+                    <span>SaaS</span><span>AI Cloud</span>
+                </div>
+                <span class="wi-year">2025</span>
+                <span class="wi-arrow">↗</span>
+            </a>
+
+            <a class="work-item reveal-item"
+               href="https://nguyenvuong.framer.ai/works"
+               target="_blank" rel="noopener"
+               data-bg="linear-gradient(135deg, #2a0a3c, #0f0218)"
+               data-label="App · AI Interaction · 2025">
+                <span class="wi-num">07</span>
+                <div class="wi-body">
+                    <h3 class="wi-name">Meganova Chat</h3>
+                    <p class="wi-desc">AI roleplay platform for emotionally engaging conversations</p>
+                </div>
+                <div class="wi-tags">
+                    <span>App</span><span>AI</span>
+                </div>
+                <span class="wi-year">2025</span>
+                <span class="wi-arrow">↗</span>
+            </a>
+
+        </div>
+
+        <!-- Other Works -->
+        <div class="other-works reveal">
+            <h4 class="other-works-label">+ Other Works</h4>
+            <div class="other-grid">
+                <div class="other-item"><span>◈</span> Landing Pages</div>
+                <div class="other-item"><span>◈</span> E-Magazine Design</div>
+                <div class="other-item"><span>◈</span> Sticker Packs</div>
+                <div class="other-item"><span>◈</span> 3D Websites</div>
+                <div class="other-item"><span>◈</span> Short Film Competition</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROCESS
+════════════════════════════════════════ -->
+<section class="process section-spacing">
+    <div class="container">
+        <div class="section-label reveal">
+            <span class="label-num">03</span>
+            <div class="label-line"></div>
+            <span class="label-text">Design Process</span>
+        </div>
+
+        <div class="process-grid">
+            <div class="process-step reveal">
+                <span class="ps-num">01</span>
+                <h3 class="ps-title">Discover</h3>
+                <p class="ps-desc">Research users, map behaviors, and uncover real pain points behind the surface request.</p>
+            </div>
+            <div class="process-step reveal">
+                <span class="ps-num">02</span>
+                <h3 class="ps-title">Define</h3>
+                <p class="ps-desc">Synthesize findings into clear problem statements and design principles that guide the work.</p>
+            </div>
+            <div class="process-step reveal">
+                <span class="ps-num">03</span>
+                <h3 class="ps-title">Design</h3>
+                <p class="ps-desc">Explore solutions through sketches, wireframes, and high-fidelity prototypes with intent.</p>
+            </div>
+            <div class="process-step reveal">
+                <span class="ps-num">04</span>
+                <h3 class="ps-title">Deliver</h3>
+                <p class="ps-desc">Test, iterate, and hand off polished, documented designs ready for development.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+════════════════════════════════════════ -->
+<section id="contact" class="contact section-spacing">
+    <div class="container">
+        <div class="section-label reveal">
+            <span class="label-num">04</span>
+            <div class="label-line"></div>
+            <span class="label-text">Contact</span>
+        </div>
+
+        <h2 class="contact-heading reveal">
+            <span>Let's Create</span>
+            <span class="ch-italic">Something</span>
+            <span>Meaningful.</span>
+        </h2>
+
+        <div class="contact-links reveal">
+            <a href="mailto:hello@nguyenvuong.design" class="contact-link">
+                <div>
+                    <span class="cl-label">Email</span>
+                    <span class="cl-value">hello@nguyenvuong.design</span>
+                </div>
+                <span class="cl-arrow">↗</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link">
+                <div>
+                    <span class="cl-label">LinkedIn</span>
+                    <span class="cl-value">Nguyen Vuong</span>
+                </div>
+                <span class="cl-arrow">↗</span>
+            </a>
+            <a href="https://behance.net" target="_blank" rel="noopener" class="contact-link">
+                <div>
+                    <span class="cl-label">Behance</span>
+                    <span class="cl-value">@nguyenvuong</span>
+                </div>
+                <span class="cl-arrow">↗</span>
+            </a>
+            <a href="https://nguyenvuong.framer.ai" target="_blank" rel="noopener" class="contact-link">
+                <div>
+                    <span class="cl-label">Portfolio</span>
+                    <span class="cl-value">nguyenvuong.framer.ai</span>
+                </div>
+                <span class="cl-arrow">↗</span>
+            </a>
+        </div>
+
+        <footer class="site-footer reveal">
+            <span>© 2025 Nguyen Vuong. All rights reserved.</span>
+            <span>Designed & built with care.</span>
+        </footer>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
