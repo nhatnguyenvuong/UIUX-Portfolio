@@ -220,15 +220,7 @@ ul { list-style: none; }
 
 .logo-text,
 .logo-mark {
-    background: linear-gradient(
-        to right,
-        rgba(255,255,255,0.7) 0%,
-        rgba(255,255,255,1)  51%,
-        rgba(255,255,255,0.6) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .logo-mark {
@@ -365,15 +357,7 @@ ul { list-style: none; }
 
 .hn-part {
     display: block;
-    background: linear-gradient(
-        180deg,
-        rgba(255,255,255,0.7)  0%,
-        rgba(255,255,255,1)   51%,
-        rgba(255,255,255,0.6) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: rgba(255, 255, 255, 0.92);
     transform: translateY(110%);
     opacity: 0;
 }
