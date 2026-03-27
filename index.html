@@ -63,40 +63,9 @@
         <h1 class="hero-name">
             <span class="hn-part">Vuong</span>
 
-            <!-- Circular ornament -->
+            <!-- Rotating sun ornament -->
             <span class="hn-ornament" aria-hidden="true">
-                <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%"   stop-color="#fcb635"/>
-                            <stop offset="50%"  stop-color="#fff6d0"/>
-                            <stop offset="100%" stop-color="#fc8835"/>
-                        </linearGradient>
-                        <filter id="goldGlow" x="-30%" y="-30%" width="160%" height="160%">
-                            <feGaussianBlur stdDeviation="4" result="blur"/>
-                            <feMerge>
-                                <feMergeNode in="blur"/>
-                                <feMergeNode in="SourceGraphic"/>
-                            </feMerge>
-                        </filter>
-                        <path id="circlePath"
-                              d="M90,90 m-65,0 a65,65 0 1,1 130,0 a65,65 0 1,1 -130,0"/>
-                    </defs>
-                    <!-- Glow ring -->
-                    <circle cx="90" cy="90" r="65"
-                            fill="none" stroke="rgba(252,182,53,0.15)" stroke-width="1.5"/>
-                    <!-- Circular text -->
-                    <text fill="url(#goldGrad)" font-size="20"
-                          font-family="Hatolie, serif"
-                          filter="url(#goldGlow)">
-                        <textPath href="#circlePath" startOffset="0%">
-                            n · n · n · n · n · n · n · n ·
-                        </textPath>
-                    </text>
-                    <!-- Center dot -->
-                    <circle cx="90" cy="90" r="5"
-                            fill="url(#goldGrad)" filter="url(#goldGlow)"/>
-                </svg>
+                <img src="Rotating sun.png" alt="" class="sun-img">
             </span>
 
             <span class="hn-part">NguyEn</span>
