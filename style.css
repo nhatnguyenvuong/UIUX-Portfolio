@@ -414,7 +414,7 @@ ul { list-style: none; }
 /* ─ CTA buttons ─ */
 .hero-ctas {
     display: flex;
-    gap: 1rem;
+    gap: 24px;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
@@ -435,8 +435,7 @@ ul { list-style: none; }
     padding: 0.7rem 1.6rem;
     border: 1px solid rgba(255,255,255,0.18);
     transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
-    flex: 1 1 0;
-    min-width: 0;
+    width: 200px;
 }
 
 .btn-filled  { background: rgba(0,0,0,0.4); }
