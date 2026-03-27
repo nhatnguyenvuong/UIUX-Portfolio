@@ -46,9 +46,13 @@
 ════════════════════════════════════════ -->
 <section id="home" class="hero">
 
-    <!-- Background image + fade overlay -->
+    <!-- Background video + fade overlay -->
     <div class="hero-bg" aria-hidden="true">
-        <img src="hero-bg.png" alt="">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+            <source src="hero-bg.mp4" type="video/mp4">
+            <!-- Fallback nếu browser không hỗ trợ video -->
+            <img src="hero-bg.png" alt="">
+        </video>
         <div class="hero-bg-fade"></div>
     </div>
 

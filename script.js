@@ -294,9 +294,9 @@ if (marquee) {
     });
 }
 
-/* ── Hero background parallax ────────────────────────────────── */
+/* ── Hero video parallax ─────────────────────────────────────── */
 window.addEventListener('scroll', () => {
     const y = window.scrollY;
-    const bg = qs('.hero-bg img');
-    if (bg) bg.style.transform = `translateY(${y * 0.3}px)`;
+    const vid = qs('.hero-video');
+    if (vid) vid.style.transform = `translateY(${y * 0.25}px)`;
 }, { passive: true });
