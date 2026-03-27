@@ -273,20 +273,20 @@ ul { list-style: none; }
 
     border: 1px solid transparent;
     background-image:
-        linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),
+        linear-gradient(rgba(255,255,255,0.06), rgba(255,255,255,0.06)),
         linear-gradient(145deg,
-            rgba(255,255,255,0.55) 0%,
-            rgba(255,255,255,0.10) 40%,
-            rgba(255,255,255,0.04) 70%,
-            rgba(255,255,255,0.22) 100%);
+            rgba(255,255,255,0.40) 0%,
+            rgba(255,255,255,0.08) 40%,
+            rgba(255,255,255,0.02) 70%,
+            rgba(255,255,255,0.14) 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    backdrop-filter: blur(40px) saturate(200%) brightness(1.1);
-    -webkit-backdrop-filter: blur(40px) saturate(200%) brightness(1.1);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
     box-shadow:
-        inset 0 1.5px 0 rgba(255,255,255,0.40),
-        inset 0 -1px 0 rgba(0,0,0,0.25),
-        0 4px 24px rgba(0,0,0,0.30);
+        inset 0 1.5px 0 rgba(255,255,255,0.30),
+        inset 0 -1px 0 rgba(0,0,0,0.15),
+        0 4px 24px rgba(0,0,0,0.20);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -477,22 +477,20 @@ ul { list-style: none; }
     /* Figma: rgba(0,0,0,0.20) fill */
     border: 1px solid transparent;
     background-image:
-        linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),
+        linear-gradient(rgba(255,255,255,0.06), rgba(255,255,255,0.06)),
         linear-gradient(145deg,
-            rgba(255,255,255,0.55) 0%,
-            rgba(255,255,255,0.10) 40%,
-            rgba(255,255,255,0.04) 70%,
-            rgba(255,255,255,0.22) 100%);
+            rgba(255,255,255,0.40) 0%,
+            rgba(255,255,255,0.08) 40%,
+            rgba(255,255,255,0.02) 70%,
+            rgba(255,255,255,0.14) 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    backdrop-filter: blur(40px) saturate(200%) brightness(1.1);
-    -webkit-backdrop-filter: blur(40px) saturate(200%) brightness(1.1);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
     box-shadow:
-        inset 0 1.5px 0 rgba(255,255,255,0.40),
-        inset 0 -1px 0 rgba(0,0,0,0.25),
-        inset 0 0 24px rgba(255,255,255,0.04),
-        0 4px 24px rgba(0,0,0,0.35),
-        0 1px 4px rgba(0,0,0,0.20);
+        inset 0 1.5px 0 rgba(255,255,255,0.30),
+        inset 0 -1px 0 rgba(0,0,0,0.15),
+        0 4px 24px rgba(0,0,0,0.20);
     transition: background-image 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
