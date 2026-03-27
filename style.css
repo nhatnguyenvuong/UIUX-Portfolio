@@ -433,16 +433,27 @@ ul { list-style: none; }
     color: #fff;
     border-radius: 999px;
     padding: 0.7rem 1.6rem;
-    border: 1px solid rgba(255,255,255,0.18);
-    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+
+    /* Apple glass: gradient border trick */
+    border: 1px solid transparent;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.07), rgba(255,255,255,0.07)),
+        linear-gradient(160deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.06) 60%, rgba(255,255,255,0.12) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    /* Frosted glass */
+    backdrop-filter: blur(10px) saturate(160%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%);
+
+    transition: background-image 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn-filled  { background: rgba(0,0,0,0.4); }
-.btn-outline { background: transparent; }
-
 .btn-pill:hover {
-    background: rgba(255,255,255,0.12);
-    border-color: rgba(255,255,255,0.4);
+    background-image:
+        linear-gradient(rgba(255,255,255,0.14), rgba(255,255,255,0.14)),
+        linear-gradient(160deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.12) 60%, rgba(255,255,255,0.22) 100%);
+    box-shadow: 0 4px 24px rgba(255,255,255,0.08);
     transform: translateY(-2px);
 }
 
