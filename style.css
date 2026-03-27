@@ -273,7 +273,7 @@ ul { list-style: none; }
 
     border: 1px solid transparent;
     background-image:
-        linear-gradient(rgba(255,255,255,0.06), rgba(255,255,255,0.06)),
+        linear-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0.05)),
         linear-gradient(145deg,
             rgba(255,255,255,0.40) 0%,
             rgba(255,255,255,0.08) 40%,
@@ -477,7 +477,7 @@ ul { list-style: none; }
     /* Figma: rgba(0,0,0,0.20) fill */
     border: 1px solid transparent;
     background-image:
-        linear-gradient(rgba(255,255,255,0.06), rgba(255,255,255,0.06)),
+        linear-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0.05)),
         linear-gradient(145deg,
             rgba(255,255,255,0.40) 0%,
             rgba(255,255,255,0.08) 40%,
@@ -510,7 +510,7 @@ ul { list-style: none; }
 
 .btn-filled:hover {
     background-image:
-        linear-gradient(rgba(255,255,255,0.06), rgba(255,255,255,0.06)),
+        linear-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0.05)),
         linear-gradient(145deg,
             rgba(255,255,255,0.70) 0%,
             rgba(255,255,255,0.16) 40%,
