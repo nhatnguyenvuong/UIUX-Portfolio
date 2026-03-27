@@ -300,7 +300,7 @@ ul { list-style: none; }
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: visible; /* don't clip text */
     background: #040404;
 }
 
@@ -309,6 +309,7 @@ ul { list-style: none; }
     position: absolute;
     inset: 0;
     z-index: 0;
+    overflow: hidden; /* contain video within hero bounds */
 }
 
 .hero-bg img,
