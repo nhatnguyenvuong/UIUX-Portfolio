@@ -7,7 +7,7 @@
     <meta name="description" content="Nguyen Vuong is a UI/UX designer exploring the intersection of human behavior, technology, and emotion.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,14 +26,18 @@
 
 <!-- Navigation -->
 <nav id="nav" class="nav">
-    <a href="#home" class="nav-logo">NV</a>
+    <a href="#home" class="nav-logo">
+        <span class="logo-text">Vuong NguyEn</span>
+        <span class="logo-mark">Ⓝ</span>
+    </a>
     <ul class="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#works" class="nav-link">Works</a></li>
+        <li><a href="#home"    class="nav-link">Home</a></li>
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#works"   class="nav-link">My Work</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
     <a href="mailto:hello@nguyenvuong.design" class="nav-cta">
-        Get in Touch <span class="cta-arrow">↗</span>
+        Mail me <span class="cta-arrow">↗</span>
     </a>
 </nav>
 
@@ -41,34 +45,68 @@
      HERO
 ════════════════════════════════════════ -->
 <section id="home" class="hero">
-    <div class="hero-top">
-        <span class="hero-badge">UI/UX Designer · Based in Vietnam</span>
+
+    <!-- Background image + fade overlay -->
+    <div class="hero-bg" aria-hidden="true">
+        <img src="hero-bg.png" alt="">
+        <div class="hero-bg-fade"></div>
     </div>
 
-    <div class="hero-center">
-        <h1 class="hero-title">
-            <span class="title-line"><span class="title-inner">Nguyen</span></span>
-            <span class="title-line title-outlined"><span class="title-inner">Vuong</span></span>
+    <!-- Hero content -->
+    <div class="hero-content">
+
+        <h1 class="hero-name">
+            <span class="hn-part">Vuong</span>
+
+            <!-- Circular ornament (Figma: Repeat group "n" in gold) -->
+            <span class="hn-ornament" aria-hidden="true">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%"   stop-color="#fcb635"/>
+                            <stop offset="51%"  stop-color="#ffffff"/>
+                            <stop offset="100%" stop-color="rgba(252,136,53,0.6)"/>
+                        </linearGradient>
+                        <path id="circlePath"
+                              d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/>
+                    </defs>
+                    <text fill="url(#goldGrad)" font-size="10.5"
+                          font-family="Cormorant Garamond, serif" letter-spacing="3.2">
+                        <textPath href="#circlePath">
+                            n · n · n · n · n · n · n · n · n ·
+                        </textPath>
+                    </text>
+                    <circle cx="60" cy="60" r="3.5" fill="url(#goldGrad)"/>
+                </svg>
+            </span>
+
+            <span class="hn-part">NguyEn</span>
         </h1>
-        <p class="hero-sub">Thoughtful digital experiences at the intersection of<br>human behavior, technology & emotion.</p>
+
+        <p class="hero-bio">
+            I design digital products with clarity at the core, guided by structured thinking,
+            thoughtful hierarchy, and long-term intention in every decision I make.
+            My approach centers on building systems rather than just visuals, creating interfaces
+            that remain coherent and quietly effective as products grow and evolve.
+        </p>
+
+        <div class="hero-ctas">
+            <a href="mailto:hello@nguyenvuong.design" class="btn-pill btn-filled">
+                Hit me up <span class="btn-arrow">↗</span>
+            </a>
+            <a href="#" class="btn-pill btn-outline" download>
+                Download resume <span class="btn-arrow">↗</span>
+            </a>
+        </div>
+
+    </div><!-- /hero-content -->
+
+    <!-- Scroll cue -->
+    <div class="hero-scroll-cue" aria-hidden="true">
+        <div class="scroll-line-wrap"><div class="scroll-line"></div></div>
+        <span class="scroll-label">Scroll</span>
     </div>
 
-    <div class="hero-bottom">
-        <div class="hero-social">
-            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-            <span class="social-sep">·</span>
-            <a href="https://behance.net" target="_blank" rel="noopener">Behance</a>
-            <span class="social-sep">·</span>
-            <a href="https://nguyenvuong.framer.ai" target="_blank" rel="noopener">Framer</a>
-        </div>
-        <div class="hero-scroll-indicator">
-            <span class="scroll-label">Scroll</span>
-            <div class="scroll-line-wrap"><div class="scroll-line"></div></div>
-        </div>
-    </div>
-
-    <!-- Decorative number -->
-    <span class="hero-deco-num" aria-hidden="true">2025</span>
 </section>
 
 <!-- ═══════════════════════════════════════

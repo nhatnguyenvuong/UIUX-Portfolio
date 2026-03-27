@@ -120,38 +120,32 @@ function initHero() {
     const tl = gsap.timeline({ defaults: { ease: 'power4.out' } });
 
     tl
-        .to('.hero-badge', {
-            opacity: 1, duration: 0.8, delay: 0.05
+        // Name parts slide up from behind
+        .to('.hn-part', {
+            y: '0%', opacity: 1,
+            duration: 1.2, stagger: 0.2
         })
-        .to('.title-inner', {
-            y: '0%', duration: 1.1, stagger: 0.18
+        // Ornament spins in
+        .to('.hn-ornament', {
+            opacity: 1, scale: 1, rotate: 0,
+            duration: 1.1, ease: 'back.out(1.4)'
+        }, '-=0.8')
+        // Bio fades up
+        .to('.hero-bio', {
+            opacity: 1, y: 0, duration: 0.9
         }, '-=0.5')
-        .to('.hero-sub', {
+        // Buttons
+        .to('.hero-ctas', {
             opacity: 1, y: 0, duration: 0.8
         }, '-=0.6')
-        .to(['.hero-social', '.hero-scroll-indicator'], {
-            opacity: 1, y: 0, duration: 0.7, stagger: 0.1
-        }, '-=0.5');
+        // Scroll cue
+        .to('.hero-scroll-cue', {
+            opacity: 1, duration: 0.7
+        }, '-=0.4');
 }
 
 /* ── Scroll Animations ───────────────────────────────────────── */
 function initScrollAnimations() {
-    // Generic reveal helper
-    function reveal(selector, vars = {}) {
-        gsap.to(selector, {
-            opacity: 1,
-            y: 0,
-            duration: vars.duration || 0.85,
-            stagger:  vars.stagger  || 0,
-            ease:     vars.ease     || 'power3.out',
-            scrollTrigger: {
-                trigger: typeof selector === 'string' ? selector : selector[0],
-                start: 'top 84%',
-                ...vars.st
-            }
-        });
-    }
-
     // Section labels
     qsa('.section-label').forEach(el => {
         gsap.to(el, {
@@ -300,12 +294,9 @@ if (marquee) {
     });
 }
 
-/* ── Horizontal scroll hint (hero deco) ─────────────────────── */
-// Subtle parallax on hero title
+/* ── Hero background parallax ────────────────────────────────── */
 window.addEventListener('scroll', () => {
     const y = window.scrollY;
-    const titleInners = qsa('.title-inner');
-    titleInners.forEach((el, i) => {
-        el.style.transform = `translateY(${y * (i === 0 ? -0.04 : -0.06)}px)`;
-    });
+    const bg = qs('.hero-bg img');
+    if (bg) bg.style.transform = `translateY(${y * 0.3}px)`;
 }, { passive: true });
